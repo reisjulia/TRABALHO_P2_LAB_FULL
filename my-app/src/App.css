@@ -1,0 +1,152 @@
+:root {
+  --rosa-claro: #f5a6c2;
+  --azul-claro: #a7c6ed;
+  --roxo-escuro: #5d2b8d;
+  --branco: #ffffff;
+  --cinza-claro: #f2f2f2;
+  --preto: #333333;
+  --azul-bem-claro: #e6f1ff;
+}
+
+.App {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--cinza-claro);
+  color: var(--preto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url('https://www.transparenttextures.com/patterns/diagonal-stripes-light.png'); /* Exemplo de fundo */
+  background-size: cover;
+}
+
+h1 {
+  color: var(--roxo-escuro);
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+form {
+  background-color: var(--branco);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 550px; /* Aumentei a largura do formulário */
+  text-align: left;
+  box-sizing: border-box;
+  border: 1px solid var(--azul-claro);
+}
+
+h2 {
+  color: var(--roxo-escuro);
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+input {
+  background-color: var(--azul-claro);
+  border: 1px solid var(--azul-claro);
+  border-radius: 5px;
+  color: var(--preto);
+  font-size: 1.2rem;
+  padding: 20px;
+  margin: 15px 0;
+  width: 100%; 
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--roxo-escuro);
+  outline: none;
+  background-color: #e2eaff;
+}
+
+button {
+  background-color: var(--roxo-escuro);
+  border: none;
+  border-radius: 5px;
+  color: var(--branco);
+  font-size: 1.2rem;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4a207d;
+}
+
+a {
+  color: var(--roxo-escuro);
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+label {
+  color: var(--preto);
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  form {
+    padding: 40px;
+    max-width: 180%;
+  }
+
+  input, button {
+    font-size: 1.1rem;
+    padding: 18px;
+  }
+
+  input {
+    width: 110%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  form {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  input, button {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  input {
+    width: 110%;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+}
